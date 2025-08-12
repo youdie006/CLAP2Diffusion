@@ -47,8 +47,28 @@ class CLAPAudioEncoder(nn.Module):
         self.clap_model = ClapModel.from_pretrained(model_name).to(device)
         self.processor = ClapProcessor.from_pretrained(model_name)
         
-        # Get embedding dimension
-        self.embedding_dim = self.clap_model.audio_projection.out_features
+        # Get embedding dimension - CLAP uses 512-dim embeddings by default
+        # According to the CLAP documentation, the audio_projection is a ClapProjectionLayer
+        # We need to check the actual weight dimensions
+        try:
+            # For ClapAudioModelWithProjection, the projection layer maps to the embedding space
+            if hasattr(self.clap_model, 'audio_model_output'):
+                # Some CLAP models have different structures
+                self.embedding_dim = self.clap_model.audio_model_output.audio_projection.weight.shape[0]
+            elif hasattr(self.clap_model, 'audio_projection'):
+                # Check the weight matrix dimensions
+                if hasattr(self.clap_model.audio_projection, 'weight'):
+                    # Output dimension is the first dimension of the weight matrix
+                    self.embedding_dim = self.clap_model.audio_projection.weight.shape[0]
+                else:
+                    # Default CLAP embedding dimension
+                    self.embedding_dim = 512
+            else:
+                # Default CLAP embedding dimension
+                self.embedding_dim = 512
+        except Exception as e:
+            print(f"Warning: Could not determine CLAP embedding dimension: {e}")
+            self.embedding_dim = 512
         
         # Freeze encoder if specified
         if freeze:
@@ -79,8 +99,11 @@ class CLAPAudioEncoder(nn.Module):
         Returns:
             Preprocessed audio tensor
         """
-        # Convert to numpy if tensor
+        # Convert to numpy if tensor (handle BFloat16)
         if isinstance(audio, torch.Tensor):
+            # Convert BFloat16 to Float32 for numpy compatibility
+            if audio.dtype == torch.bfloat16:
+                audio = audio.float()
             audio = audio.cpu().numpy()
         
         # Ensure mono audio
