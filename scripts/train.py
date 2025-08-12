@@ -374,8 +374,8 @@ class CLAP2DiffusionTrainer:
             )
         
         # Create main log file
-        log_dir = Path("/workspace/logs")
-        log_dir.mkdir(exist_ok=True)
+        log_dir = Path(self.config['training'].get('log_dir', 'logs'))
+        log_dir.mkdir(exist_ok=True, parents=True)
         main_log_path = log_dir / f"training_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
         main_log = open(main_log_path, "w")
         main_log.write(f"CLAP2Diffusion Training Log\n")
@@ -431,13 +431,15 @@ class CLAP2DiffusionTrainer:
                     
                     # Gradient clipping (native PyTorch since optimizer is not prepared)
                     if self.accelerator.sync_gradients:
-                        # Get the parameters to clip based on current stage
+                        # Clip gradients for trainable parameters only
                         if self.current_stage == 1:
                             params_to_clip = self.audio_adapter.parameters()
                         elif self.current_stage == 2:
-                            params_to_clip = list(self.unet.parameters()) + list(self.audio_adapter.parameters())
+                            # Only clip trainable LoRA parameters
+                            params_to_clip = [p for p in self.unet.parameters() if p.requires_grad]
+                            params_to_clip.extend(self.audio_adapter.parameters())
                         else:  # stage 3
-                            params_to_clip = [self.attention_adapter.gate]
+                            params_to_clip = [p for p in self.attention_adapter.parameters() if p.requires_grad]
                         
                         torch.nn.utils.clip_grad_norm_(
                             params_to_clip,
