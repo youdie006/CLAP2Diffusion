@@ -5,9 +5,18 @@ Implements 3-stage training: Audio Adapter -> LoRA+Adapter -> Gate Optimization
 """
 
 import os
+# Set HuggingFace cache directory if not already set
+if 'HF_HOME' not in os.environ:
+    os.environ['HF_HOME'] = os.path.expanduser('~/.cache/huggingface')
+if 'TRANSFORMERS_CACHE' not in os.environ:
+    os.environ['TRANSFORMERS_CACHE'] = os.path.join(os.environ['HF_HOME'], 'transformers')
+if 'HF_DATASETS_CACHE' not in os.environ:
+    os.environ['HF_DATASETS_CACHE'] = os.path.join(os.environ['HF_HOME'], 'datasets')
+
 import sys
 import json
 import argparse
+import time
 from pathlib import Path
 from datetime import datetime
 import torch
@@ -37,14 +46,15 @@ class CLAP2DiffusionTrainer:
         with open(config_path, 'r') as f:
             self.config = json.load(f)
         
-        # Initialize accelerator
+        # Initialize accelerator with BF16 for better stability
         self.accelerator = Accelerator(
-            mixed_precision='fp16' if self.config['training'].get('mixed_precision', True) else 'no',
+            mixed_precision='bf16' if self.config['training'].get('mixed_precision', True) else 'no',
             gradient_accumulation_steps=self.config['training'].get('gradient_accumulation_steps', 1)
         )
         
-        # Set device
+        # Set device and dtype (use BF16 for better stability)
         self.device = self.accelerator.device
+        self.dtype = torch.bfloat16 if self.config['training'].get('mixed_precision', True) else torch.float32
         
         # Initialize models
         self.setup_models()
@@ -60,11 +70,11 @@ class CLAP2DiffusionTrainer:
         """Initialize all model components."""
         print("Loading models...")
         
-        # Load base Stable Diffusion
+        # Load base Stable Diffusion with BF16
         model_id = self.config['model'].get('base_model', 'runwayml/stable-diffusion-v1-5')
         self.pipe = StableDiffusionPipeline.from_pretrained(
             model_id,
-            torch_dtype=torch.float16 if self.config['training'].get('mixed_precision', True) else torch.float32
+            torch_dtype=torch.bfloat16 if self.config['training'].get('mixed_precision', True) else torch.float32
         )
         
         # Extract components
@@ -81,65 +91,89 @@ class CLAP2DiffusionTrainer:
         
         # Initialize audio adapter
         self.audio_adapter = AudioProjectionMLP(
-            audio_dim=self.config['model'].get('audio_dim', 512),
-            text_dim=self.config['model'].get('text_dim', 768),
+            input_dim=self.config['model'].get('audio_dim', 512),
+            output_dim=self.config['model'].get('text_dim', 768),
             num_tokens=self.config['model'].get('num_audio_tokens', 8)
         )
         
         # Initialize attention adapter
         self.attention_adapter = AudioAdapterAttention(
-            dim=self.config['model'].get('attention_dim', 768),
-            audio_dim=self.config['model'].get('audio_dim', 512)
+            dim=self.config['model'].get('attention_dim', 768)
         )
         
-        # Move to device
+        # Move to device with correct dtype
         self.vae = self.vae.to(self.device)
         self.text_encoder = self.text_encoder.to(self.device)
         self.unet = self.unet.to(self.device)
         self.audio_encoder = self.audio_encoder.to(self.device)
-        self.audio_adapter = self.audio_adapter.to(self.device)
-        self.attention_adapter = self.attention_adapter.to(self.device)
+        self.audio_adapter = self.audio_adapter.to(self.device, dtype=self.dtype)
+        self.attention_adapter = self.attention_adapter.to(self.device, dtype=self.dtype)
         
         # Freeze base models
         self.vae.requires_grad_(False)
         self.text_encoder.requires_grad_(False)
-        self.audio_encoder.model.requires_grad_(False)
+        self.audio_encoder.clap_model.requires_grad_(False)
         
         print("Models loaded successfully!")
         
+    def collate_fn(self, batch):
+        """Custom collate function to handle text tokenization."""
+        # Extract data from batch
+        audio = torch.stack([item['audio'] for item in batch])
+        images = torch.stack([item['image'] for item in batch])
+        texts = [item['text'] for item in batch]
+        
+        # Tokenize text
+        text_inputs = self.tokenizer(
+            texts,
+            padding=True,
+            truncation=True,
+            max_length=77,
+            return_tensors="pt"
+        )
+        
+        return {
+            'audio': audio,
+            'image': images,
+            'text': texts,
+            'text_input_ids': text_inputs.input_ids,
+            'text_attention_mask': text_inputs.attention_mask
+        }
+    
     def setup_datasets(self):
         """Initialize training and validation datasets."""
         print("Loading datasets...")
         
         # Training dataset
         self.train_dataset = AudioImageDataset(
-            data_dir=Path(self.config['data']['data_dir']),
-            metadata_file=Path(self.config['data']['train_metadata']),
-            tokenizer=self.tokenizer,
-            image_size=self.config['data'].get('image_size', 512),
+            data_root=self.config['data']['data_dir'],
+            split="train",
             audio_sample_rate=self.config['data'].get('sample_rate', 48000),
             audio_duration=self.config['data'].get('audio_duration', 10.0),
+            image_size=self.config['data'].get('image_size', 512),
             augment=True
         )
         
         # Validation dataset
         self.val_dataset = AudioImageDataset(
-            data_dir=Path(self.config['data']['data_dir']),
-            metadata_file=Path(self.config['data']['val_metadata']),
-            tokenizer=self.tokenizer,
-            image_size=self.config['data'].get('image_size', 512),
+            data_root=self.config['data']['data_dir'],
+            split="val",
             audio_sample_rate=self.config['data'].get('sample_rate', 48000),
             audio_duration=self.config['data'].get('audio_duration', 10.0),
+            image_size=self.config['data'].get('image_size', 512),
             augment=False
         )
         
-        # Create dataloaders
+        # Create dataloaders with optimization
         self.train_loader = DataLoader(
             self.train_dataset,
             batch_size=self.config['training'].get('batch_size', 4),
             shuffle=True,
             num_workers=self.config['training'].get('num_workers', 4),
-            pin_memory=True
+            pin_memory=True,
+            collate_fn=self.collate_fn,
+            prefetch_factor=2,
+            persistent_workers=True
         )
         
         self.val_loader = DataLoader(
@@ -147,7 +181,8 @@ class CLAP2DiffusionTrainer:
             batch_size=self.config['training'].get('batch_size', 4),
             shuffle=False,
             num_workers=self.config['training'].get('num_workers', 4),
-            pin_memory=True
+            pin_memory=True,
+            collate_fn=self.collate_fn
         )
         
         print(f"Train samples: {len(self.train_dataset)}")
@@ -217,26 +252,26 @@ class CLAP2DiffusionTrainer:
             
             self.num_steps = self.config['stage3'].get('num_steps', 2000)
         
-        # Learning rate scheduler
+        # Learning rate scheduler with more warmup
         self.lr_scheduler = get_scheduler(
             "cosine",
             optimizer=self.optimizer,
-            num_warmup_steps=min(500, self.num_steps // 10),
+            num_warmup_steps=min(1000, self.num_steps // 5),  # Increased warmup
             num_training_steps=self.num_steps
         )
         
-        # Prepare with accelerator
-        self.unet, self.audio_adapter, self.attention_adapter, self.optimizer, self.train_loader, self.lr_scheduler = \
+        # Prepare with accelerator (exclude optimizer to avoid FP16 gradient issues)
+        self.unet, self.audio_adapter, self.attention_adapter, self.train_loader, self.lr_scheduler = \
             self.accelerator.prepare(
                 self.unet, self.audio_adapter, self.attention_adapter, 
-                self.optimizer, self.train_loader, self.lr_scheduler
+                self.train_loader, self.lr_scheduler
             )
         
     def train_step(self, batch):
         """Single training step."""
         # Get batch data
-        images = batch['image'].to(self.device)
-        audio = batch['audio'].to(self.device)
+        images = batch['image'].to(self.device, dtype=self.dtype)
+        audio = batch['audio'].to(self.device, dtype=self.dtype) 
         text_input_ids = batch['text_input_ids'].to(self.device)
         text_attention_mask = batch['text_attention_mask'].to(self.device)
         
@@ -266,8 +301,24 @@ class CLAP2DiffusionTrainer:
         with torch.no_grad():
             audio_embeddings = self.audio_encoder(audio)
         
+        # Debug: Check shapes
+        if audio_embeddings.dim() == 1:
+            audio_embeddings = audio_embeddings.unsqueeze(0)
+        
+        # Ensure batch dimension matches
+        if audio_embeddings.shape[0] != text_embeddings.shape[0]:
+            # If audio batch is smaller, expand it
+            if audio_embeddings.shape[0] == 1:
+                audio_embeddings = audio_embeddings.expand(text_embeddings.shape[0], -1)
+        
+        # Convert to correct dtype before projection
+        audio_embeddings = audio_embeddings.to(dtype=text_embeddings.dtype)
+        
         # Project audio to text space
         audio_tokens = self.audio_adapter(audio_embeddings)
+        
+        # Ensure audio_tokens has correct dtype
+        audio_tokens = audio_tokens.to(dtype=text_embeddings.dtype)
         
         # Combine text and audio embeddings
         combined_embeddings = torch.cat([text_embeddings, audio_tokens], dim=1)
@@ -279,8 +330,8 @@ class CLAP2DiffusionTrainer:
             encoder_hidden_states=combined_embeddings
         ).sample
         
-        # Calculate loss
-        loss = nn.functional.mse_loss(model_pred, noise, reduction="mean")
+        # Calculate loss (in float32 for stability)
+        loss = nn.functional.mse_loss(model_pred.float(), noise.float(), reduction="mean")
         
         return loss
     
@@ -322,13 +373,38 @@ class CLAP2DiffusionTrainer:
                 name=f"train_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
             )
         
+        # Create main log file
+        log_dir = Path("/workspace/logs")
+        log_dir.mkdir(exist_ok=True)
+        main_log_path = log_dir / f"training_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+        main_log = open(main_log_path, "w")
+        main_log.write(f"CLAP2Diffusion Training Log\n")
+        main_log.write(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        main_log.write(f"Configuration:\n")
+        main_log.write(json.dumps(self.config, indent=2) + "\n\n")
+        main_log.flush()
+        
         # Train each stage
         for stage in range(1, 4):
             self.setup_stage(stage)
             self.current_stage = stage
             
+            # Stage-specific log
+            stage_log_path = log_dir / f"stage{stage}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
+            stage_log = open(stage_log_path, "w")
+            stage_log.write(f"Stage {stage} Training Log\n")
+            stage_log.write(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            stage_log.write(f"Total steps: {self.num_steps}\n")
+            stage_log.write(f"Learning rate: {self.lr_scheduler.get_last_lr()[0]}\n\n")
+            stage_log.flush()
+            
+            stage_start_time = time.time()
+            
             # Training loop for current stage
             progress_bar = tqdm(range(self.num_steps), desc=f"Stage {stage}")
+            
+            # Create data loader iterator
+            train_iter = iter(self.train_loader)
             
             for step in range(self.num_steps):
                 # Training step
@@ -336,15 +412,35 @@ class CLAP2DiffusionTrainer:
                 self.audio_adapter.train()
                 self.attention_adapter.train()
                 
-                batch = next(iter(self.train_loader))
+                # Get batch, restart iterator if needed
+                try:
+                    batch = next(train_iter)
+                except StopIteration:
+                    print(f"\nRestarting data loader at step {step}")
+                    stage_log.write(f"\nRestarted data loader at step {step}\n")
+                    stage_log.flush()
+                    train_iter = iter(self.train_loader)
+                    batch = next(train_iter)
                 
-                with self.accelerator.accumulate(self.unet):
+                # Use appropriate model for accumulation based on stage
+                accumulate_model = self.audio_adapter if self.current_stage == 1 else self.unet
+                
+                with self.accelerator.accumulate(accumulate_model):
                     loss = self.train_step(batch)
                     self.accelerator.backward(loss)
                     
+                    # Gradient clipping (native PyTorch since optimizer is not prepared)
                     if self.accelerator.sync_gradients:
-                        self.accelerator.clip_grad_norm_(
-                            self.optimizer.param_groups[0]['params'],
+                        # Get the parameters to clip based on current stage
+                        if self.current_stage == 1:
+                            params_to_clip = self.audio_adapter.parameters()
+                        elif self.current_stage == 2:
+                            params_to_clip = list(self.unet.parameters()) + list(self.audio_adapter.parameters())
+                        else:  # stage 3
+                            params_to_clip = [self.attention_adapter.gate]
+                        
+                        torch.nn.utils.clip_grad_norm_(
+                            params_to_clip,
                             self.config['training'].get('max_grad_norm', 1.0)
                         )
                     
@@ -361,6 +457,14 @@ class CLAP2DiffusionTrainer:
                 }
                 progress_bar.set_postfix(**logs)
                 
+                # Write to log files
+                if step % 10 == 0:  # Log every 10 steps
+                    log_entry = f"Step {step}/{self.num_steps}: loss={logs['loss']:.6f}, lr={logs['lr']:.2e}\n"
+                    stage_log.write(log_entry)
+                    stage_log.flush()
+                    main_log.write(f"Stage {stage} - {log_entry}")
+                    main_log.flush()
+                
                 # Log to wandb
                 if self.config['training'].get('use_wandb', False):
                     wandb.log(logs, step=self.global_step)
@@ -370,19 +474,50 @@ class CLAP2DiffusionTrainer:
                     val_loss = self.validate()
                     print(f"\nValidation loss: {val_loss:.4f}")
                     
+                    val_log_entry = f"\nValidation at step {step}: loss={val_loss:.4f}\n"
+                    stage_log.write(val_log_entry)
+                    stage_log.flush()
+                    main_log.write(f"Stage {stage} - {val_log_entry}")
+                    main_log.flush()
+                    
                     if self.config['training'].get('use_wandb', False):
                         wandb.log({"val_loss": val_loss}, step=self.global_step)
                 
                 # Save checkpoint
                 if (step + 1) % self.config['training'].get('save_steps', 1000) == 0:
                     self.save_checkpoint(stage, step)
+                    checkpoint_log = f"\nCheckpoint saved at step {step}\n"
+                    stage_log.write(checkpoint_log)
+                    stage_log.flush()
+                    main_log.write(f"Stage {stage} - {checkpoint_log}")
+                    main_log.flush()
                 
                 self.global_step += 1
             
             # Save stage checkpoint
             self.save_checkpoint(stage, self.num_steps, final=True)
+            
+            # Stage completion log
+            stage_time = time.time() - stage_start_time
+            completion_log = f"\nStage {stage} completed in {stage_time/60:.2f} minutes\n"
+            completion_log += f"Final loss: {logs['loss']:.6f}\n"
+            completion_log += f"Completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+            
+            stage_log.write(completion_log)
+            stage_log.close()
+            
+            main_log.write(completion_log)
+            main_log.flush()
+            
+            print(f"\nStage {stage} completed in {stage_time/60:.2f} minutes")
         
         print("\n=== Training Complete! ===")
+        
+        # Final log entry
+        main_log.write(f"\nTraining completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        main_log.close()
+        
+        print(f"Training logs saved to: {log_dir}")
     
     def save_checkpoint(self, stage: int, step: int, final: bool = False):
         """Save training checkpoint."""
