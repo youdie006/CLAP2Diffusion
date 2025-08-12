@@ -76,7 +76,7 @@ class CLAP2DiffusionTrainer:
         
         # Initialize CLAP audio encoder
         self.audio_encoder = CLAPAudioEncoder(
-            model_path=self.config['model'].get('clap_model', 'laion/larger_clap_music_and_speech')
+            model_name=self.config['model'].get('clap_model', 'laion/larger_clap_music_and_speech')
         )
         
         # Initialize audio adapter

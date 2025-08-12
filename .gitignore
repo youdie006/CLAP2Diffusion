@@ -86,3 +86,5 @@ docker_*.sh
 # Project documentation (private)
 CLAUDE.md
 claude.md
+BRANCH_STRATEGY.md
+branch_strategy.md
