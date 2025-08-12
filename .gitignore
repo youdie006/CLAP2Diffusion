@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.dist-info/
+.installed.cfg
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Model checkpoints (managed by LFS, but ignore temporary ones)
+checkpoints_temp/
+*.tmp
+
+# Logs
+logs/
+*.log
+runs/
+wandb/
+
+# Cache
+.cache/
+__pycache__/
+*.pyc
+
+# Docker
+*.dockerignore
+
+# Environment variables
+.env
+.env.local
+
+# Data (raw data not in LFS)
+data_raw/
+data_temp/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Shell scripts for testing
+*.sh
+run_*.sh
+test_*.sh
+demo_*.sh
+docker_*.sh
+
+# Project documentation (private)
+CLAUDE.md
+claude.md

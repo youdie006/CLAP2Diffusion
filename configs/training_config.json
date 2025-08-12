@@ -1,0 +1,47 @@
+{
+  "model": {
+    "base_model": "runwayml/stable-diffusion-v1-5",
+    "clap_model": "laion/larger_clap_music_and_speech",
+    "audio_dim": 512,
+    "text_dim": 768,
+    "attention_dim": 768,
+    "num_audio_tokens": 8
+  },
+  "data": {
+    "data_dir": "data/vggsound",
+    "train_metadata": "data/vggsound/train_metadata.json",
+    "val_metadata": "data/vggsound/val_metadata.json",
+    "test_metadata": "data/vggsound/test_metadata.json",
+    "image_size": 512,
+    "sample_rate": 48000,
+    "audio_duration": 10.0
+  },
+  "training": {
+    "batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "num_workers": 4,
+    "mixed_precision": true,
+    "max_grad_norm": 1.0,
+    "val_steps": 500,
+    "save_steps": 1000,
+    "checkpoint_dir": "checkpoints",
+    "use_wandb": false
+  },
+  "stage1": {
+    "num_steps": 3000,
+    "learning_rate": 1e-4,
+    "weight_decay": 0.01
+  },
+  "stage2": {
+    "num_steps": 7000,
+    "learning_rate": 5e-5,
+    "weight_decay": 0.01,
+    "lora_rank": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1
+  },
+  "stage3": {
+    "num_steps": 2000,
+    "learning_rate": 1e-3
+  }
+}

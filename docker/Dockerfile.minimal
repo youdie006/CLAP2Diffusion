@@ -1,0 +1,37 @@
+# Minimal Dockerfile for CLAP2Diffusion
+FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    ffmpeg \
+    libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /workspace
+
+# Copy requirements file
+COPY requirements.txt .
+
+# Install Python dependencies (without CLAP first)
+RUN pip install --no-cache-dir diffusers==0.24.0 transformers==4.36.0 accelerate==0.25.0 \
+    peft==0.7.0 librosa==0.10.1 soundfile==0.12.1 \
+    Pillow==10.1.0 numpy==1.24.4 scipy==1.11.4 \
+    tqdm==4.66.1 gradio==4.8.0 einops==0.7.0
+
+# Install CLAP from source
+RUN pip install --no-cache-dir git+https://github.com/LAION-AI/CLAP.git@1.1.6
+
+# Copy project files
+COPY . .
+
+# Set environment variables for GPU
+ENV CUDA_VISIBLE_DEVICES=0
+ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
+
+# Expose Gradio port
+EXPOSE 7860
+
+# Default command for dataset generation
+CMD ["python", "scripts/prepare_dataset.py", "--dataset", "synthetic", "--num_samples", "100"]
