@@ -19,7 +19,7 @@
   "training": {
     "batch_size": 2,
     "gradient_accumulation_steps": 2,
-    "num_workers": 8,
+    "num_workers": 2,
     "mixed_precision": true,
     "max_grad_norm": 0.5,
     "val_steps": 500,
