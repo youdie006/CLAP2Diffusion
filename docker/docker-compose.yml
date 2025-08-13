@@ -25,6 +25,7 @@ services:
     shm_size: '16gb'
     stdin_open: true
     tty: true
+    command: /bin/bash
     deploy:
       resources:
         reservations:

@@ -1,444 +1,500 @@
 [
   {
-    "video_id": "1LA8BxMlXSY",
-    "audio_path": "audio/1LA8BxMlXSY.wav",
-    "image_path": "frames/1LA8BxMlXSY.jpg",
+    "video_id": "1G0mwXgqOCU",
+    "audio_path": "audio/1G0mwXgqOCU.wav",
+    "image_path": "frames/1G0mwXgqOCU.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "-diPczRE_-M",
+    "audio_path": "audio/-diPczRE_-M.wav",
+    "image_path": "frames/-diPczRE_-M.jpg",
     "class": "siren",
     "text": "A scene with siren sound"
   },
   {
-    "video_id": "2Z6gM6EXVXo",
-    "audio_path": "audio/2Z6gM6EXVXo.wav",
-    "image_path": "frames/2Z6gM6EXVXo.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "0FX2fDsp9_o",
-    "audio_path": "audio/0FX2fDsp9_o.wav",
-    "image_path": "frames/0FX2fDsp9_o.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "NWzLu1xRyK4",
-    "audio_path": "audio/NWzLu1xRyK4.wav",
-    "image_path": "frames/NWzLu1xRyK4.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "14jAozNsNsc",
-    "audio_path": "audio/14jAozNsNsc.wav",
-    "image_path": "frames/14jAozNsNsc.jpg",
+    "video_id": "MVM5RlkTh6E",
+    "audio_path": "audio/MVM5RlkTh6E.wav",
+    "image_path": "frames/MVM5RlkTh6E.jpg",
     "class": "siren",
     "text": "A scene with siren sound"
   },
   {
-    "video_id": "--Z4X0SQxBc",
-    "audio_path": "audio/--Z4X0SQxBc.wav",
-    "image_path": "frames/--Z4X0SQxBc.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
+    "video_id": "5WVH4_iIYCQ",
+    "audio_path": "audio/5WVH4_iIYCQ.wav",
+    "image_path": "frames/5WVH4_iIYCQ.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
   },
   {
-    "video_id": "1PPn02f5M2U",
-    "audio_path": "audio/1PPn02f5M2U.wav",
-    "image_path": "frames/1PPn02f5M2U.jpg",
+    "video_id": "Lx0GfS5FOXs",
+    "audio_path": "audio/Lx0GfS5FOXs.wav",
+    "image_path": "frames/Lx0GfS5FOXs.jpg",
     "class": "siren",
     "text": "A scene with siren sound"
   },
   {
-    "video_id": "2vUe3LakHAo",
-    "audio_path": "audio/2vUe3LakHAo.wav",
-    "image_path": "frames/2vUe3LakHAo.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
+    "video_id": "7raBooHPgTM",
+    "audio_path": "audio/7raBooHPgTM.wav",
+    "image_path": "frames/7raBooHPgTM.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
   },
   {
-    "video_id": "03wteHHdPnY",
-    "audio_path": "audio/03wteHHdPnY.wav",
-    "image_path": "frames/03wteHHdPnY.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "-Wqrvzcoe7k",
-    "audio_path": "audio/-Wqrvzcoe7k.wav",
-    "image_path": "frames/-Wqrvzcoe7k.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "FRb9sSaF6EY",
-    "audio_path": "audio/FRb9sSaF6EY.wav",
-    "image_path": "frames/FRb9sSaF6EY.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "2DMwt1wEOT0",
-    "audio_path": "audio/2DMwt1wEOT0.wav",
-    "image_path": "frames/2DMwt1wEOT0.jpg",
-    "class": "fire",
-    "text": "A scene with fire sound"
-  },
-  {
-    "video_id": "0y2PavBJnck",
-    "audio_path": "audio/0y2PavBJnck.wav",
-    "image_path": "frames/0y2PavBJnck.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "Fb1yUJr_cAE",
-    "audio_path": "audio/Fb1yUJr_cAE.wav",
-    "image_path": "frames/Fb1yUJr_cAE.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "3sOGFWOz5Sk",
-    "audio_path": "audio/3sOGFWOz5Sk.wav",
-    "image_path": "frames/3sOGFWOz5Sk.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "4lNsWi99V5Y",
-    "audio_path": "audio/4lNsWi99V5Y.wav",
-    "image_path": "frames/4lNsWi99V5Y.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "5xA51w7HDag",
-    "audio_path": "audio/5xA51w7HDag.wav",
-    "image_path": "frames/5xA51w7HDag.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "-4ItJ9yTz_c",
-    "audio_path": "audio/-4ItJ9yTz_c.wav",
-    "image_path": "frames/-4ItJ9yTz_c.jpg",
+    "video_id": "V2SP3dRFUqE",
+    "audio_path": "audio/V2SP3dRFUqE.wav",
+    "image_path": "frames/V2SP3dRFUqE.jpg",
     "class": "rain",
     "text": "A scene with rain sound"
   },
   {
-    "video_id": "AHoWincIkzc",
-    "audio_path": "audio/AHoWincIkzc.wav",
-    "image_path": "frames/AHoWincIkzc.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "A5X5L_un_L4",
-    "audio_path": "audio/A5X5L_un_L4.wav",
-    "image_path": "frames/A5X5L_un_L4.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "0ZGt4GjihSY",
-    "audio_path": "audio/0ZGt4GjihSY.wav",
-    "image_path": "frames/0ZGt4GjihSY.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "2B4qYTizPgo",
-    "audio_path": "audio/2B4qYTizPgo.wav",
-    "image_path": "frames/2B4qYTizPgo.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "YQW1Kp3fBaA",
-    "audio_path": "audio/YQW1Kp3fBaA.wav",
-    "image_path": "frames/YQW1Kp3fBaA.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "-XbCC_UocHE",
-    "audio_path": "audio/-XbCC_UocHE.wav",
-    "image_path": "frames/-XbCC_UocHE.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "MU1383zAS_8",
-    "audio_path": "audio/MU1383zAS_8.wav",
-    "image_path": "frames/MU1383zAS_8.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "0LMtUJDoYgE",
-    "audio_path": "audio/0LMtUJDoYgE.wav",
-    "image_path": "frames/0LMtUJDoYgE.jpg",
+    "video_id": "4-SZ0BRns30",
+    "audio_path": "audio/4-SZ0BRns30.wav",
+    "image_path": "frames/4-SZ0BRns30.jpg",
     "class": "engine",
     "text": "A scene with engine sound"
   },
   {
-    "video_id": "-2-wdcN5vOw",
-    "audio_path": "audio/-2-wdcN5vOw.wav",
-    "image_path": "frames/-2-wdcN5vOw.jpg",
+    "video_id": "Dj5zkfSQA48",
+    "audio_path": "audio/Dj5zkfSQA48.wav",
+    "image_path": "frames/Dj5zkfSQA48.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "A6p86Kp6tDE",
+    "audio_path": "audio/A6p86Kp6tDE.wav",
+    "image_path": "frames/A6p86Kp6tDE.jpg",
     "class": "rain",
     "text": "A scene with rain sound"
   },
   {
-    "video_id": "01a4tYk7zKM",
-    "audio_path": "audio/01a4tYk7zKM.wav",
-    "image_path": "frames/01a4tYk7zKM.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "LZFfZoHh-Vs",
-    "audio_path": "audio/LZFfZoHh-Vs.wav",
-    "image_path": "frames/LZFfZoHh-Vs.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "90-yhRr5p1g",
-    "audio_path": "audio/90-yhRr5p1g.wav",
-    "image_path": "frames/90-yhRr5p1g.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "Ibbl6TewkHo",
-    "audio_path": "audio/Ibbl6TewkHo.wav",
-    "image_path": "frames/Ibbl6TewkHo.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "2_gcAeeqzwQ",
-    "audio_path": "audio/2_gcAeeqzwQ.wav",
-    "image_path": "frames/2_gcAeeqzwQ.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "-r4vbRkcndc",
-    "audio_path": "audio/-r4vbRkcndc.wav",
-    "image_path": "frames/-r4vbRkcndc.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "23DBj8nuOGo",
-    "audio_path": "audio/23DBj8nuOGo.wav",
-    "image_path": "frames/23DBj8nuOGo.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "-9yf3oNuowg",
-    "audio_path": "audio/-9yf3oNuowg.wav",
-    "image_path": "frames/-9yf3oNuowg.jpg",
+    "video_id": "_VOx5BWJsyQ",
+    "audio_path": "audio/_VOx5BWJsyQ.wav",
+    "image_path": "frames/_VOx5BWJsyQ.jpg",
     "class": "rain",
     "text": "A scene with rain sound"
   },
   {
-    "video_id": "09mLJftOYsc",
-    "audio_path": "audio/09mLJftOYsc.wav",
-    "image_path": "frames/09mLJftOYsc.jpg",
+    "video_id": "KMQiCdZaMys",
+    "audio_path": "audio/KMQiCdZaMys.wav",
+    "image_path": "frames/KMQiCdZaMys.jpg",
     "class": "siren",
     "text": "A scene with siren sound"
   },
   {
-    "video_id": "-krJ-BIUwoU",
-    "audio_path": "audio/-krJ-BIUwoU.wav",
-    "image_path": "frames/-krJ-BIUwoU.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "BD3aEZknenQ",
-    "audio_path": "audio/BD3aEZknenQ.wav",
-    "image_path": "frames/BD3aEZknenQ.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "18212B4yfLg",
-    "audio_path": "audio/18212B4yfLg.wav",
-    "image_path": "frames/18212B4yfLg.jpg",
-    "class": "fire",
-    "text": "A scene with fire sound"
-  },
-  {
-    "video_id": "18AC5qDvkbI",
-    "audio_path": "audio/18AC5qDvkbI.wav",
-    "image_path": "frames/18AC5qDvkbI.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "-LBHWlaxWHc",
-    "audio_path": "audio/-LBHWlaxWHc.wav",
-    "image_path": "frames/-LBHWlaxWHc.jpg",
-    "class": "fire",
-    "text": "A scene with fire sound"
-  },
-  {
-    "video_id": "7iIBkME4bSM",
-    "audio_path": "audio/7iIBkME4bSM.wav",
-    "image_path": "frames/7iIBkME4bSM.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "5ER13IBXFUE",
-    "audio_path": "audio/5ER13IBXFUE.wav",
-    "image_path": "frames/5ER13IBXFUE.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "02P3ZXouUVM",
-    "audio_path": "audio/02P3ZXouUVM.wav",
-    "image_path": "frames/02P3ZXouUVM.jpg",
+    "video_id": "1bg9tK5KaY4",
+    "audio_path": "audio/1bg9tK5KaY4.wav",
+    "image_path": "frames/1bg9tK5KaY4.jpg",
     "class": "engine",
     "text": "A scene with engine sound"
   },
   {
-    "video_id": "-JyWgRhvP6g",
-    "audio_path": "audio/-JyWgRhvP6g.wav",
-    "image_path": "frames/-JyWgRhvP6g.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "00-BMXYRxYY",
-    "audio_path": "audio/00-BMXYRxYY.wav",
-    "image_path": "frames/00-BMXYRxYY.jpg",
+    "video_id": "-CZ1LIc8aos",
+    "audio_path": "audio/-CZ1LIc8aos.wav",
+    "image_path": "frames/-CZ1LIc8aos.jpg",
     "class": "engine",
     "text": "A scene with engine sound"
   },
   {
-    "video_id": "OmgC_AYLtsk",
-    "audio_path": "audio/OmgC_AYLtsk.wav",
-    "image_path": "frames/OmgC_AYLtsk.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
+    "video_id": "33iJCFymwFM",
+    "audio_path": "audio/33iJCFymwFM.wav",
+    "image_path": "frames/33iJCFymwFM.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   },
   {
-    "video_id": "077_m7wNT3I",
-    "audio_path": "audio/077_m7wNT3I.wav",
-    "image_path": "frames/077_m7wNT3I.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "ARLBEK3YmSM",
-    "audio_path": "audio/ARLBEK3YmSM.wav",
-    "image_path": "frames/ARLBEK3YmSM.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "6WdBgB_-xrY",
-    "audio_path": "audio/6WdBgB_-xrY.wav",
-    "image_path": "frames/6WdBgB_-xrY.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "0Fv4lkRB-BM",
-    "audio_path": "audio/0Fv4lkRB-BM.wav",
-    "image_path": "frames/0Fv4lkRB-BM.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "0ZP_JGQbwPw",
-    "audio_path": "audio/0ZP_JGQbwPw.wav",
-    "image_path": "frames/0ZP_JGQbwPw.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "1G7SoQYB7vs",
-    "audio_path": "audio/1G7SoQYB7vs.wav",
-    "image_path": "frames/1G7SoQYB7vs.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "0glBUluF4Yk",
-    "audio_path": "audio/0glBUluF4Yk.wav",
-    "image_path": "frames/0glBUluF4Yk.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "-WwAxd-BBrs",
-    "audio_path": "audio/-WwAxd-BBrs.wav",
-    "image_path": "frames/-WwAxd-BBrs.jpg",
+    "video_id": "6BMN_8txY40",
+    "audio_path": "audio/6BMN_8txY40.wav",
+    "image_path": "frames/6BMN_8txY40.jpg",
     "class": "engine",
     "text": "A scene with engine sound"
   },
   {
-    "video_id": "5Fb4UB7Rw2Q",
-    "audio_path": "audio/5Fb4UB7Rw2Q.wav",
-    "image_path": "frames/5Fb4UB7Rw2Q.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "21oYgoG5jnc",
-    "audio_path": "audio/21oYgoG5jnc.wav",
-    "image_path": "frames/21oYgoG5jnc.jpg",
-    "class": "fire",
-    "text": "A scene with fire sound"
-  },
-  {
-    "video_id": "1J0_v85FioA",
-    "audio_path": "audio/1J0_v85FioA.wav",
-    "image_path": "frames/1J0_v85FioA.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "0Cw7T_rMgn0",
-    "audio_path": "audio/0Cw7T_rMgn0.wav",
-    "image_path": "frames/0Cw7T_rMgn0.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "69JnUAL1HBQ",
-    "audio_path": "audio/69JnUAL1HBQ.wav",
-    "image_path": "frames/69JnUAL1HBQ.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "2erACT9n-B4",
-    "audio_path": "audio/2erACT9n-B4.wav",
-    "image_path": "frames/2erACT9n-B4.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "-nBBzEXQ4Jg",
-    "audio_path": "audio/-nBBzEXQ4Jg.wav",
-    "image_path": "frames/-nBBzEXQ4Jg.jpg",
+    "video_id": "E3XcvFygCmI",
+    "audio_path": "audio/E3XcvFygCmI.wav",
+    "image_path": "frames/E3XcvFygCmI.jpg",
     "class": "ocean_waves",
     "text": "A scene with ocean waves sound"
   },
   {
-    "video_id": "SdHsbNDd_zA",
-    "audio_path": "audio/SdHsbNDd_zA.wav",
-    "image_path": "frames/SdHsbNDd_zA.jpg",
+    "video_id": "0hOD_iIeePk",
+    "audio_path": "audio/0hOD_iIeePk.wav",
+    "image_path": "frames/0hOD_iIeePk.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "GGuE_3JzERM",
+    "audio_path": "audio/GGuE_3JzERM.wav",
+    "image_path": "frames/GGuE_3JzERM.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "56FMrkKJ96k",
+    "audio_path": "audio/56FMrkKJ96k.wav",
+    "image_path": "frames/56FMrkKJ96k.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "ESXgEitdYaQ",
+    "audio_path": "audio/ESXgEitdYaQ.wav",
+    "image_path": "frames/ESXgEitdYaQ.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "MMQLD910Rpw",
+    "audio_path": "audio/MMQLD910Rpw.wav",
+    "image_path": "frames/MMQLD910Rpw.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "-z6NOS2bnCk",
+    "audio_path": "audio/-z6NOS2bnCk.wav",
+    "image_path": "frames/-z6NOS2bnCk.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "8Fw9Uivi5tA",
+    "audio_path": "audio/8Fw9Uivi5tA.wav",
+    "image_path": "frames/8Fw9Uivi5tA.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "26V12lfGUhY",
+    "audio_path": "audio/26V12lfGUhY.wav",
+    "image_path": "frames/26V12lfGUhY.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "BiUEVx_G0nU",
+    "audio_path": "audio/BiUEVx_G0nU.wav",
+    "image_path": "frames/BiUEVx_G0nU.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "967itZck8sU",
+    "audio_path": "audio/967itZck8sU.wav",
+    "image_path": "frames/967itZck8sU.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "MNgEO78i24E",
+    "audio_path": "audio/MNgEO78i24E.wav",
+    "image_path": "frames/MNgEO78i24E.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "79kTmQT56fU",
+    "audio_path": "audio/79kTmQT56fU.wav",
+    "image_path": "frames/79kTmQT56fU.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "3umPqOkFiww",
+    "audio_path": "audio/3umPqOkFiww.wav",
+    "image_path": "frames/3umPqOkFiww.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "4UT3mhBPiX4",
+    "audio_path": "audio/4UT3mhBPiX4.wav",
+    "image_path": "frames/4UT3mhBPiX4.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "PAEYhV0rIXs",
+    "audio_path": "audio/PAEYhV0rIXs.wav",
+    "image_path": "frames/PAEYhV0rIXs.jpg",
     "class": "thunder",
     "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "EVINfYn0n84",
+    "audio_path": "audio/EVINfYn0n84.wav",
+    "image_path": "frames/EVINfYn0n84.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "3MOdK7QISdY",
+    "audio_path": "audio/3MOdK7QISdY.wav",
+    "image_path": "frames/3MOdK7QISdY.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "4EvpRRHJ_c4",
+    "audio_path": "audio/4EvpRRHJ_c4.wav",
+    "image_path": "frames/4EvpRRHJ_c4.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "UDCaKyBlnq8",
+    "audio_path": "audio/UDCaKyBlnq8.wav",
+    "image_path": "frames/UDCaKyBlnq8.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "2TIdNWgZGEk",
+    "audio_path": "audio/2TIdNWgZGEk.wav",
+    "image_path": "frames/2TIdNWgZGEk.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "au036eve4s4",
+    "audio_path": "audio/au036eve4s4.wav",
+    "image_path": "frames/au036eve4s4.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "I82yLYwdiO8",
+    "audio_path": "audio/I82yLYwdiO8.wav",
+    "image_path": "frames/I82yLYwdiO8.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "4NZkW-XaIa4",
+    "audio_path": "audio/4NZkW-XaIa4.wav",
+    "image_path": "frames/4NZkW-XaIa4.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "8Jd9q8mWBPk",
+    "audio_path": "audio/8Jd9q8mWBPk.wav",
+    "image_path": "frames/8Jd9q8mWBPk.jpg",
+    "class": "ocean_waves",
+    "text": "A scene with ocean waves sound"
+  },
+  {
+    "video_id": "8uQh3kXo2dM",
+    "audio_path": "audio/8uQh3kXo2dM.wav",
+    "image_path": "frames/8uQh3kXo2dM.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "52TvGcpOGWs",
+    "audio_path": "audio/52TvGcpOGWs.wav",
+    "image_path": "frames/52TvGcpOGWs.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "TJpyMR-IN3M",
+    "audio_path": "audio/TJpyMR-IN3M.wav",
+    "image_path": "frames/TJpyMR-IN3M.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "10khlGmxNsE",
+    "audio_path": "audio/10khlGmxNsE.wav",
+    "image_path": "frames/10khlGmxNsE.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "5Zth6XdLSYk",
+    "audio_path": "audio/5Zth6XdLSYk.wav",
+    "image_path": "frames/5Zth6XdLSYk.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "F1LZ9tgInRI",
+    "audio_path": "audio/F1LZ9tgInRI.wav",
+    "image_path": "frames/F1LZ9tgInRI.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "3-PW9JBQZ7E",
+    "audio_path": "audio/3-PW9JBQZ7E.wav",
+    "image_path": "frames/3-PW9JBQZ7E.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "Pp3TAyeu0Lk",
+    "audio_path": "audio/Pp3TAyeu0Lk.wav",
+    "image_path": "frames/Pp3TAyeu0Lk.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "7Q3-j5eZRyg",
+    "audio_path": "audio/7Q3-j5eZRyg.wav",
+    "image_path": "frames/7Q3-j5eZRyg.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "3QuXpjfjkfs",
+    "audio_path": "audio/3QuXpjfjkfs.wav",
+    "image_path": "frames/3QuXpjfjkfs.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "tKzdvxKtUlk",
+    "audio_path": "audio/tKzdvxKtUlk.wav",
+    "image_path": "frames/tKzdvxKtUlk.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "4p8n4Zf-WMM",
+    "audio_path": "audio/4p8n4Zf-WMM.wav",
+    "image_path": "frames/4p8n4Zf-WMM.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "sFPCqfqWbhY",
+    "audio_path": "audio/sFPCqfqWbhY.wav",
+    "image_path": "frames/sFPCqfqWbhY.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "3isOx39nAVs",
+    "audio_path": "audio/3isOx39nAVs.wav",
+    "image_path": "frames/3isOx39nAVs.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "L0tBrfjwgY4",
+    "audio_path": "audio/L0tBrfjwgY4.wav",
+    "image_path": "frames/L0tBrfjwgY4.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "5GZvtObctdQ",
+    "audio_path": "audio/5GZvtObctdQ.wav",
+    "image_path": "frames/5GZvtObctdQ.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "8tCBldr1gpc",
+    "audio_path": "audio/8tCBldr1gpc.wav",
+    "image_path": "frames/8tCBldr1gpc.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "7QNqmApWIjA",
+    "audio_path": "audio/7QNqmApWIjA.wav",
+    "image_path": "frames/7QNqmApWIjA.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "18fUW_j2oZ4",
+    "audio_path": "audio/18fUW_j2oZ4.wav",
+    "image_path": "frames/18fUW_j2oZ4.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "7EAkRbG8qKk",
+    "audio_path": "audio/7EAkRbG8qKk.wav",
+    "image_path": "frames/7EAkRbG8qKk.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "5KQ0OV2b12Q",
+    "audio_path": "audio/5KQ0OV2b12Q.wav",
+    "image_path": "frames/5KQ0OV2b12Q.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "GGE4j6rb-tA",
+    "audio_path": "audio/GGE4j6rb-tA.wav",
+    "image_path": "frames/GGE4j6rb-tA.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "2pHfgh_G1yo",
+    "audio_path": "audio/2pHfgh_G1yo.wav",
+    "image_path": "frames/2pHfgh_G1yo.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "-ZLgW6Td5S0",
+    "audio_path": "audio/-ZLgW6Td5S0.wav",
+    "image_path": "frames/-ZLgW6Td5S0.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "hjLjHI2UCpA",
+    "audio_path": "audio/hjLjHI2UCpA.wav",
+    "image_path": "frames/hjLjHI2UCpA.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "4yTEfEHwpDM",
+    "audio_path": "audio/4yTEfEHwpDM.wav",
+    "image_path": "frames/4yTEfEHwpDM.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "mgs7IohbBmA",
+    "audio_path": "audio/mgs7IohbBmA.wav",
+    "image_path": "frames/mgs7IohbBmA.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "HJwkLcIU264",
+    "audio_path": "audio/HJwkLcIU264.wav",
+    "image_path": "frames/HJwkLcIU264.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "DL0_40NuIrg",
+    "audio_path": "audio/DL0_40NuIrg.wav",
+    "image_path": "frames/DL0_40NuIrg.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "-HUcjhcskP4",
+    "audio_path": "audio/-HUcjhcskP4.wav",
+    "image_path": "frames/-HUcjhcskP4.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   },
   {
     "video_id": "2XQzahrQ_tE",
@@ -448,430 +504,577 @@
     "text": "A scene with ocean waves sound"
   },
   {
-    "video_id": "1aXQVJWpgKQ",
-    "audio_path": "audio/1aXQVJWpgKQ.wav",
-    "image_path": "frames/1aXQVJWpgKQ.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "-_wznbUu3DY",
-    "audio_path": "audio/-_wznbUu3DY.wav",
-    "image_path": "frames/-_wznbUu3DY.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "-LGTb-xyjzA",
-    "audio_path": "audio/-LGTb-xyjzA.wav",
-    "image_path": "frames/-LGTb-xyjzA.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "-HmYuZCgM2s",
-    "audio_path": "audio/-HmYuZCgM2s.wav",
-    "image_path": "frames/-HmYuZCgM2s.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "7CNEl7h-sTc",
-    "audio_path": "audio/7CNEl7h-sTc.wav",
-    "image_path": "frames/7CNEl7h-sTc.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "8f3-lNmDnKk",
-    "audio_path": "audio/8f3-lNmDnKk.wav",
-    "image_path": "frames/8f3-lNmDnKk.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "AH6lskPX3sI",
-    "audio_path": "audio/AH6lskPX3sI.wav",
-    "image_path": "frames/AH6lskPX3sI.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "082Xop2Twaw",
-    "audio_path": "audio/082Xop2Twaw.wav",
-    "image_path": "frames/082Xop2Twaw.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "4mXikhkrUXA",
-    "audio_path": "audio/4mXikhkrUXA.wav",
-    "image_path": "frames/4mXikhkrUXA.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "18IpqzEBKtY",
-    "audio_path": "audio/18IpqzEBKtY.wav",
-    "image_path": "frames/18IpqzEBKtY.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "9OeEfrHMdws",
-    "audio_path": "audio/9OeEfrHMdws.wav",
-    "image_path": "frames/9OeEfrHMdws.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "SZ7tgMo-QUY",
-    "audio_path": "audio/SZ7tgMo-QUY.wav",
-    "image_path": "frames/SZ7tgMo-QUY.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "2mZTK9XI3Ug",
-    "audio_path": "audio/2mZTK9XI3Ug.wav",
-    "image_path": "frames/2mZTK9XI3Ug.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "-NGTv0zfA20",
-    "audio_path": "audio/-NGTv0zfA20.wav",
-    "image_path": "frames/-NGTv0zfA20.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "2P1uwGQfaPA",
-    "audio_path": "audio/2P1uwGQfaPA.wav",
-    "image_path": "frames/2P1uwGQfaPA.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "-8pCMgGKZY8",
-    "audio_path": "audio/-8pCMgGKZY8.wav",
-    "image_path": "frames/-8pCMgGKZY8.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "9i-bflEPkLo",
-    "audio_path": "audio/9i-bflEPkLo.wav",
-    "image_path": "frames/9i-bflEPkLo.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "6RzUj89yTQ8",
-    "audio_path": "audio/6RzUj89yTQ8.wav",
-    "image_path": "frames/6RzUj89yTQ8.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "0a9wVat2PWk",
-    "audio_path": "audio/0a9wVat2PWk.wav",
-    "image_path": "frames/0a9wVat2PWk.jpg",
-    "class": "rain",
-    "text": "A scene with rain sound"
-  },
-  {
-    "video_id": "0GXGWyZCDLw",
-    "audio_path": "audio/0GXGWyZCDLw.wav",
-    "image_path": "frames/0GXGWyZCDLw.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "-5qzWUgsszA",
-    "audio_path": "audio/-5qzWUgsszA.wav",
-    "image_path": "frames/-5qzWUgsszA.jpg",
+    "video_id": "5-6eiASYbv0",
+    "audio_path": "audio/5-6eiASYbv0.wav",
+    "image_path": "frames/5-6eiASYbv0.jpg",
     "class": "fire",
     "text": "A scene with fire sound"
   },
   {
-    "video_id": "89JAEnHCRbY",
-    "audio_path": "audio/89JAEnHCRbY.wav",
-    "image_path": "frames/89JAEnHCRbY.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "-vBj0PZ1RF0",
-    "audio_path": "audio/-vBj0PZ1RF0.wav",
-    "image_path": "frames/-vBj0PZ1RF0.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "-60vY5Xw1qE",
-    "audio_path": "audio/-60vY5Xw1qE.wav",
-    "image_path": "frames/-60vY5Xw1qE.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "9GV7ne3_688",
-    "audio_path": "audio/9GV7ne3_688.wav",
-    "image_path": "frames/9GV7ne3_688.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "-Q4hfmKy0DI",
-    "audio_path": "audio/-Q4hfmKy0DI.wav",
-    "image_path": "frames/-Q4hfmKy0DI.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "0INNSDdpHaA",
-    "audio_path": "audio/0INNSDdpHaA.wav",
-    "image_path": "frames/0INNSDdpHaA.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "1jyrJSHYR-c",
-    "audio_path": "audio/1jyrJSHYR-c.wav",
-    "image_path": "frames/1jyrJSHYR-c.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "40gR9F3IdpY",
-    "audio_path": "audio/40gR9F3IdpY.wav",
-    "image_path": "frames/40gR9F3IdpY.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "6vHt2FRpEWU",
-    "audio_path": "audio/6vHt2FRpEWU.wav",
-    "image_path": "frames/6vHt2FRpEWU.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "-xjTLriKXUw",
-    "audio_path": "audio/-xjTLriKXUw.wav",
-    "image_path": "frames/-xjTLriKXUw.jpg",
-    "class": "fire",
-    "text": "A scene with fire sound"
-  },
-  {
-    "video_id": "-7cMtsWTtnQ",
-    "audio_path": "audio/-7cMtsWTtnQ.wav",
-    "image_path": "frames/-7cMtsWTtnQ.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "S8fjyxM7DgU",
-    "audio_path": "audio/S8fjyxM7DgU.wav",
-    "image_path": "frames/S8fjyxM7DgU.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "1UtX_r3nZp0",
-    "audio_path": "audio/1UtX_r3nZp0.wav",
-    "image_path": "frames/1UtX_r3nZp0.jpg",
+    "video_id": "28Ih0rDx-Y4",
+    "audio_path": "audio/28Ih0rDx-Y4.wav",
+    "image_path": "frames/28Ih0rDx-Y4.jpg",
     "class": "rain",
     "text": "A scene with rain sound"
   },
   {
-    "video_id": "-8LHHoJnR3c",
-    "audio_path": "audio/-8LHHoJnR3c.wav",
-    "image_path": "frames/-8LHHoJnR3c.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "-OI4VoCS28I",
-    "audio_path": "audio/-OI4VoCS28I.wav",
-    "image_path": "frames/-OI4VoCS28I.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "06EXwqyYls0",
-    "audio_path": "audio/06EXwqyYls0.wav",
-    "image_path": "frames/06EXwqyYls0.jpg",
+    "video_id": "3JZbfcbZaoM",
+    "audio_path": "audio/3JZbfcbZaoM.wav",
+    "image_path": "frames/3JZbfcbZaoM.jpg",
     "class": "engine",
     "text": "A scene with engine sound"
   },
   {
-    "video_id": "A2vKagPEW-Y",
-    "audio_path": "audio/A2vKagPEW-Y.wav",
-    "image_path": "frames/A2vKagPEW-Y.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "1xRTeu6Sd4c",
-    "audio_path": "audio/1xRTeu6Sd4c.wav",
-    "image_path": "frames/1xRTeu6Sd4c.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "1N5Bl4Zk-dE",
-    "audio_path": "audio/1N5Bl4Zk-dE.wav",
-    "image_path": "frames/1N5Bl4Zk-dE.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
-  },
-  {
-    "video_id": "4A3_lLVLpUg",
-    "audio_path": "audio/4A3_lLVLpUg.wav",
-    "image_path": "frames/4A3_lLVLpUg.jpg",
-    "class": "helicopter",
-    "text": "A scene with helicopter sound"
-  },
-  {
-    "video_id": "-mdPX2djAUY",
-    "audio_path": "audio/-mdPX2djAUY.wav",
-    "image_path": "frames/-mdPX2djAUY.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
-  },
-  {
-    "video_id": "RwC9xpVZOPc",
-    "audio_path": "audio/RwC9xpVZOPc.wav",
-    "image_path": "frames/RwC9xpVZOPc.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "1uxuQINJa0c",
-    "audio_path": "audio/1uxuQINJa0c.wav",
-    "image_path": "frames/1uxuQINJa0c.jpg",
+    "video_id": "-ZMAmXHkEOc",
+    "audio_path": "audio/-ZMAmXHkEOc.wav",
+    "image_path": "frames/-ZMAmXHkEOc.jpg",
     "class": "rain",
     "text": "A scene with rain sound"
   },
   {
-    "video_id": "0lv-e1BetzM",
-    "audio_path": "audio/0lv-e1BetzM.wav",
-    "image_path": "frames/0lv-e1BetzM.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
+    "video_id": "1eSLuG-ZkT0",
+    "audio_path": "audio/1eSLuG-ZkT0.wav",
+    "image_path": "frames/1eSLuG-ZkT0.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   },
   {
-    "video_id": "1tWwTNl7jkM",
-    "audio_path": "audio/1tWwTNl7jkM.wav",
-    "image_path": "frames/1tWwTNl7jkM.jpg",
+    "video_id": "Ci_7GeQMBAo",
+    "audio_path": "audio/Ci_7GeQMBAo.wav",
+    "image_path": "frames/Ci_7GeQMBAo.jpg",
     "class": "siren",
     "text": "A scene with siren sound"
   },
   {
-    "video_id": "0kTHgSzQkfw",
-    "audio_path": "audio/0kTHgSzQkfw.wav",
-    "image_path": "frames/0kTHgSzQkfw.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
+    "video_id": "wqB2AqsCD_A",
+    "audio_path": "audio/wqB2AqsCD_A.wav",
+    "image_path": "frames/wqB2AqsCD_A.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   },
   {
-    "video_id": "1Lf8Fr7huOM",
-    "audio_path": "audio/1Lf8Fr7huOM.wav",
-    "image_path": "frames/1Lf8Fr7huOM.jpg",
-    "class": "siren",
-    "text": "A scene with siren sound"
+    "video_id": "7MxpjjSc9cY",
+    "audio_path": "audio/7MxpjjSc9cY.wav",
+    "image_path": "frames/7MxpjjSc9cY.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   },
   {
-    "video_id": "0-5vF6wgneo",
-    "audio_path": "audio/0-5vF6wgneo.wav",
-    "image_path": "frames/0-5vF6wgneo.jpg",
-    "class": "dog_barking",
-    "text": "A scene with dog barking sound"
+    "video_id": "Nuyzs_i0R9Y",
+    "audio_path": "audio/Nuyzs_i0R9Y.wav",
+    "image_path": "frames/Nuyzs_i0R9Y.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   },
   {
-    "video_id": "5SPuxVBDehY",
-    "audio_path": "audio/5SPuxVBDehY.wav",
-    "image_path": "frames/5SPuxVBDehY.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "-uZbyNT5yt8",
-    "audio_path": "audio/-uZbyNT5yt8.wav",
-    "image_path": "frames/-uZbyNT5yt8.jpg",
-    "class": "engine",
-    "text": "A scene with engine sound"
-  },
-  {
-    "video_id": "Rt62-Sh44MU",
-    "audio_path": "audio/Rt62-Sh44MU.wav",
-    "image_path": "frames/Rt62-Sh44MU.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "7RxjqWvSxss",
-    "audio_path": "audio/7RxjqWvSxss.wav",
-    "image_path": "frames/7RxjqWvSxss.jpg",
-    "class": "thunder",
-    "text": "A scene with thunder sound"
-  },
-  {
-    "video_id": "2K6TBvO4iSQ",
-    "audio_path": "audio/2K6TBvO4iSQ.wav",
-    "image_path": "frames/2K6TBvO4iSQ.jpg",
+    "video_id": "6WDNFfisHX0",
+    "audio_path": "audio/6WDNFfisHX0.wav",
+    "image_path": "frames/6WDNFfisHX0.jpg",
     "class": "fire",
     "text": "A scene with fire sound"
   },
   {
-    "video_id": "7p_ybbzYjQw",
-    "audio_path": "audio/7p_ybbzYjQw.wav",
-    "image_path": "frames/7p_ybbzYjQw.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
-  },
-  {
-    "video_id": "-Rry0mqLHUA",
-    "audio_path": "audio/-Rry0mqLHUA.wav",
-    "image_path": "frames/-Rry0mqLHUA.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "59zuNtoj9W8",
-    "audio_path": "audio/59zuNtoj9W8.wav",
-    "image_path": "frames/59zuNtoj9W8.jpg",
-    "class": "ocean_waves",
-    "text": "A scene with ocean waves sound"
-  },
-  {
-    "video_id": "-gDRBVMQ9as",
-    "audio_path": "audio/-gDRBVMQ9as.wav",
-    "image_path": "frames/-gDRBVMQ9as.jpg",
+    "video_id": "1jj2Rm95Idg",
+    "audio_path": "audio/1jj2Rm95Idg.wav",
+    "image_path": "frames/1jj2Rm95Idg.jpg",
     "class": "engine",
     "text": "A scene with engine sound"
   },
   {
-    "video_id": "0C_OWfuixCI",
-    "audio_path": "audio/0C_OWfuixCI.wav",
-    "image_path": "frames/0C_OWfuixCI.jpg",
+    "video_id": "P8YWfthdiEI",
+    "audio_path": "audio/P8YWfthdiEI.wav",
+    "image_path": "frames/P8YWfthdiEI.jpg",
     "class": "siren",
     "text": "A scene with siren sound"
   },
   {
-    "video_id": "4SQ-JmWEho8",
-    "audio_path": "audio/4SQ-JmWEho8.wav",
-    "image_path": "frames/4SQ-JmWEho8.jpg",
-    "class": "applause",
-    "text": "A scene with applause sound"
+    "video_id": "A2FAAKURATo",
+    "audio_path": "audio/A2FAAKURATo.wav",
+    "image_path": "frames/A2FAAKURATo.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
   },
   {
-    "video_id": "-84CyEpynsY",
-    "audio_path": "audio/-84CyEpynsY.wav",
-    "image_path": "frames/-84CyEpynsY.jpg",
+    "video_id": "43JnjVglpjg",
+    "audio_path": "audio/43JnjVglpjg.wav",
+    "image_path": "frames/43JnjVglpjg.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "0LNrs261KaI",
+    "audio_path": "audio/0LNrs261KaI.wav",
+    "image_path": "frames/0LNrs261KaI.jpg",
     "class": "dog_barking",
     "text": "A scene with dog barking sound"
+  },
+  {
+    "video_id": "2ndwZG2uok0",
+    "audio_path": "audio/2ndwZG2uok0.wav",
+    "image_path": "frames/2ndwZG2uok0.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "2aF25UVP4Pc",
+    "audio_path": "audio/2aF25UVP4Pc.wav",
+    "image_path": "frames/2aF25UVP4Pc.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "1D2q6StYdtY",
+    "audio_path": "audio/1D2q6StYdtY.wav",
+    "image_path": "frames/1D2q6StYdtY.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "aTzCrxi1a-Y",
+    "audio_path": "audio/aTzCrxi1a-Y.wav",
+    "image_path": "frames/aTzCrxi1a-Y.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "FcuBYdMGNno",
+    "audio_path": "audio/FcuBYdMGNno.wav",
+    "image_path": "frames/FcuBYdMGNno.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "5W5TuIhd0eE",
+    "audio_path": "audio/5W5TuIhd0eE.wav",
+    "image_path": "frames/5W5TuIhd0eE.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "-cyY6EAgtr0",
+    "audio_path": "audio/-cyY6EAgtr0.wav",
+    "image_path": "frames/-cyY6EAgtr0.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "0QAmSE4_-xQ",
+    "audio_path": "audio/0QAmSE4_-xQ.wav",
+    "image_path": "frames/0QAmSE4_-xQ.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "Akmt_1N_tuU",
+    "audio_path": "audio/Akmt_1N_tuU.wav",
+    "image_path": "frames/Akmt_1N_tuU.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "6hwSFG9P8yo",
+    "audio_path": "audio/6hwSFG9P8yo.wav",
+    "image_path": "frames/6hwSFG9P8yo.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "A-QYRlK7cd8",
+    "audio_path": "audio/A-QYRlK7cd8.wav",
+    "image_path": "frames/A-QYRlK7cd8.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "Xvv24JqX23Y",
+    "audio_path": "audio/Xvv24JqX23Y.wav",
+    "image_path": "frames/Xvv24JqX23Y.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "27M6RPjNdzM",
+    "audio_path": "audio/27M6RPjNdzM.wav",
+    "image_path": "frames/27M6RPjNdzM.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "0IOsmq3RCSw",
+    "audio_path": "audio/0IOsmq3RCSw.wav",
+    "image_path": "frames/0IOsmq3RCSw.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "IEq9D1iMvFQ",
+    "audio_path": "audio/IEq9D1iMvFQ.wav",
+    "image_path": "frames/IEq9D1iMvFQ.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "03X3k2rFZho",
+    "audio_path": "audio/03X3k2rFZho.wav",
+    "image_path": "frames/03X3k2rFZho.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "MQJccVBY4MY",
+    "audio_path": "audio/MQJccVBY4MY.wav",
+    "image_path": "frames/MQJccVBY4MY.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "H-mlw3egD2E",
+    "audio_path": "audio/H-mlw3egD2E.wav",
+    "image_path": "frames/H-mlw3egD2E.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "1tfY9zeeaDw",
+    "audio_path": "audio/1tfY9zeeaDw.wav",
+    "image_path": "frames/1tfY9zeeaDw.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "LzfLw0pVyTc",
+    "audio_path": "audio/LzfLw0pVyTc.wav",
+    "image_path": "frames/LzfLw0pVyTc.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "6yko25cRB20",
+    "audio_path": "audio/6yko25cRB20.wav",
+    "image_path": "frames/6yko25cRB20.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "75VpWvcmMec",
+    "audio_path": "audio/75VpWvcmMec.wav",
+    "image_path": "frames/75VpWvcmMec.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "-tIE2qVG1Bc",
+    "audio_path": "audio/-tIE2qVG1Bc.wav",
+    "image_path": "frames/-tIE2qVG1Bc.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "1xZDoVUV3P8",
+    "audio_path": "audio/1xZDoVUV3P8.wav",
+    "image_path": "frames/1xZDoVUV3P8.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "IAf3HUIy0lA",
+    "audio_path": "audio/IAf3HUIy0lA.wav",
+    "image_path": "frames/IAf3HUIy0lA.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "IJPFmylnJ1s",
+    "audio_path": "audio/IJPFmylnJ1s.wav",
+    "image_path": "frames/IJPFmylnJ1s.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "bYsgP76HUyA",
+    "audio_path": "audio/bYsgP76HUyA.wav",
+    "image_path": "frames/bYsgP76HUyA.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "3sOGFWOz5Sk",
+    "audio_path": "audio/3sOGFWOz5Sk.wav",
+    "image_path": "frames/3sOGFWOz5Sk.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "67uP2_5Pux0",
+    "audio_path": "audio/67uP2_5Pux0.wav",
+    "image_path": "frames/67uP2_5Pux0.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "3wUqRS6wcFU",
+    "audio_path": "audio/3wUqRS6wcFU.wav",
+    "image_path": "frames/3wUqRS6wcFU.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "7UHgshcjNSw",
+    "audio_path": "audio/7UHgshcjNSw.wav",
+    "image_path": "frames/7UHgshcjNSw.jpg",
+    "class": "ocean_waves",
+    "text": "A scene with ocean waves sound"
+  },
+  {
+    "video_id": "1q762_eT6y0",
+    "audio_path": "audio/1q762_eT6y0.wav",
+    "image_path": "frames/1q762_eT6y0.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "u2NVI1guAds",
+    "audio_path": "audio/u2NVI1guAds.wav",
+    "image_path": "frames/u2NVI1guAds.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "-UjnbIuJNuI",
+    "audio_path": "audio/-UjnbIuJNuI.wav",
+    "image_path": "frames/-UjnbIuJNuI.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "RPscbFkdUto",
+    "audio_path": "audio/RPscbFkdUto.wav",
+    "image_path": "frames/RPscbFkdUto.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "GgV0yYogTPI",
+    "audio_path": "audio/GgV0yYogTPI.wav",
+    "image_path": "frames/GgV0yYogTPI.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "1hA5COzE6sY",
+    "audio_path": "audio/1hA5COzE6sY.wav",
+    "image_path": "frames/1hA5COzE6sY.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "CYZ8TrVcthM",
+    "audio_path": "audio/CYZ8TrVcthM.wav",
+    "image_path": "frames/CYZ8TrVcthM.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "6sfjS8pGgjM",
+    "audio_path": "audio/6sfjS8pGgjM.wav",
+    "image_path": "frames/6sfjS8pGgjM.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "1BDiUzt9KhM",
+    "audio_path": "audio/1BDiUzt9KhM.wav",
+    "image_path": "frames/1BDiUzt9KhM.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "QHkTVSzKhH4",
+    "audio_path": "audio/QHkTVSzKhH4.wav",
+    "image_path": "frames/QHkTVSzKhH4.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "22DP73WXyb8",
+    "audio_path": "audio/22DP73WXyb8.wav",
+    "image_path": "frames/22DP73WXyb8.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "DhfUZcgZ_ko",
+    "audio_path": "audio/DhfUZcgZ_ko.wav",
+    "image_path": "frames/DhfUZcgZ_ko.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "1uD0Rmo3_nw",
+    "audio_path": "audio/1uD0Rmo3_nw.wav",
+    "image_path": "frames/1uD0Rmo3_nw.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "8MMDd9rzl8o",
+    "audio_path": "audio/8MMDd9rzl8o.wav",
+    "image_path": "frames/8MMDd9rzl8o.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "5UWPQXpywBE",
+    "audio_path": "audio/5UWPQXpywBE.wav",
+    "image_path": "frames/5UWPQXpywBE.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "5GXbpFGSZ7I",
+    "audio_path": "audio/5GXbpFGSZ7I.wav",
+    "image_path": "frames/5GXbpFGSZ7I.jpg",
+    "class": "helicopter",
+    "text": "A scene with helicopter sound"
+  },
+  {
+    "video_id": "6wO8ORMfyFI",
+    "audio_path": "audio/6wO8ORMfyFI.wav",
+    "image_path": "frames/6wO8ORMfyFI.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "E45bbjY3ZI8",
+    "audio_path": "audio/E45bbjY3ZI8.wav",
+    "image_path": "frames/E45bbjY3ZI8.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "7xFI-CZVTAA",
+    "audio_path": "audio/7xFI-CZVTAA.wav",
+    "image_path": "frames/7xFI-CZVTAA.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "C0nkW75hiuw",
+    "audio_path": "audio/C0nkW75hiuw.wav",
+    "image_path": "frames/C0nkW75hiuw.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "8Z64jFsxQN4",
+    "audio_path": "audio/8Z64jFsxQN4.wav",
+    "image_path": "frames/8Z64jFsxQN4.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "FF_Cg4zjivs",
+    "audio_path": "audio/FF_Cg4zjivs.wav",
+    "image_path": "frames/FF_Cg4zjivs.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "78xDuIu5xr0",
+    "audio_path": "audio/78xDuIu5xr0.wav",
+    "image_path": "frames/78xDuIu5xr0.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "68sN9SBpVGU",
+    "audio_path": "audio/68sN9SBpVGU.wav",
+    "image_path": "frames/68sN9SBpVGU.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "5Vxop5SIduA",
+    "audio_path": "audio/5Vxop5SIduA.wav",
+    "image_path": "frames/5Vxop5SIduA.jpg",
+    "class": "dog_barking",
+    "text": "A scene with dog barking sound"
+  },
+  {
+    "video_id": "BN-7BUYstmQ",
+    "audio_path": "audio/BN-7BUYstmQ.wav",
+    "image_path": "frames/BN-7BUYstmQ.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "1De-OI8YG-M",
+    "audio_path": "audio/1De-OI8YG-M.wav",
+    "image_path": "frames/1De-OI8YG-M.jpg",
+    "class": "thunder",
+    "text": "A scene with thunder sound"
+  },
+  {
+    "video_id": "21o6PcGFH7w",
+    "audio_path": "audio/21o6PcGFH7w.wav",
+    "image_path": "frames/21o6PcGFH7w.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "2_9UtSV9F9I",
+    "audio_path": "audio/2_9UtSV9F9I.wav",
+    "image_path": "frames/2_9UtSV9F9I.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "3Ekej01Oew8",
+    "audio_path": "audio/3Ekej01Oew8.wav",
+    "image_path": "frames/3Ekej01Oew8.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "LNQ7fzfdLiY",
+    "audio_path": "audio/LNQ7fzfdLiY.wav",
+    "image_path": "frames/LNQ7fzfdLiY.jpg",
+    "class": "siren",
+    "text": "A scene with siren sound"
+  },
+  {
+    "video_id": "-z3n74RK92U",
+    "audio_path": "audio/-z3n74RK92U.wav",
+    "image_path": "frames/-z3n74RK92U.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "0Wb08qcuPCI",
+    "audio_path": "audio/0Wb08qcuPCI.wav",
+    "image_path": "frames/0Wb08qcuPCI.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
+  },
+  {
+    "video_id": "4dnWjyySxQs",
+    "audio_path": "audio/4dnWjyySxQs.wav",
+    "image_path": "frames/4dnWjyySxQs.jpg",
+    "class": "engine",
+    "text": "A scene with engine sound"
+  },
+  {
+    "video_id": "5j-NeJST9Ow",
+    "audio_path": "audio/5j-NeJST9Ow.wav",
+    "image_path": "frames/5j-NeJST9Ow.jpg",
+    "class": "fire",
+    "text": "A scene with fire sound"
+  },
+  {
+    "video_id": "Ah8jT_32s8g",
+    "audio_path": "audio/Ah8jT_32s8g.wav",
+    "image_path": "frames/Ah8jT_32s8g.jpg",
+    "class": "rain",
+    "text": "A scene with rain sound"
   }
 ]

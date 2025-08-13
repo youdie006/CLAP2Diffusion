@@ -1,3 +1,8 @@
+# IMPORTANT: This project uses different requirements files:
+# - requirements_docker.txt: For Docker training environment  
+# - requirements_data.txt: For local data download environment
+# Please use the appropriate file based on your needs
+
 # Core ML libraries (PyTorch is installed separately in Dockerfile)
 # torch==2.1.0
 # torchvision==0.16.0
