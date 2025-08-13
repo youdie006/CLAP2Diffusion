@@ -1,0 +1,35 @@
+name: clap2diff
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.1.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+  - numpy
+  - librosa
+  - soundfile
+  - pip
+  - pip:
+    - transformers==4.35.2
+    - diffusers==0.23.1
+    - accelerate==0.24.1
+    - peft==0.6.2
+    - huggingface-hub==0.19.4
+    - safetensors==0.4.1
+    - datasets
+    - gradio
+    - wandb
+    - tqdm
+    - pillow
+    - opencv-python
+    - matplotlib
+    - tensorboard
+    - omegaconf
+    - einops
+    - xformers
+    - bitsandbytes
