@@ -1,3 +1,7 @@
+# Environment variables - PRIVATE
+.env
+.env.local
+
 # Python
 __pycache__/
 *.py[cod]
@@ -26,6 +30,9 @@ venv/
 env/
 ENV/
 .venv
+
+# Environment variables
+.env
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -65,6 +72,24 @@ __pycache__/
 data_raw/
 data_temp/
 
+# Exclude all data files
+data/**/*.wav
+data/**/*.mp3
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.mp4
+data/**/*.webm
+data/**/*.m4a
+
+# Exclude backup folders completely
+data/vggsound/backup_*/
+data/audiocaps/backup_*/
+
+# Keep only metadata JSON files
+!data/**/*metadata*.json
+!data/**/*_log.json
+
 # OS
 Thumbs.db
 .DS_Store
@@ -89,3 +114,16 @@ claude.md
 BRANCH_STRATEGY.md
 branch_strategy.md
 PROGRESS_REPORT.md
+
+
+# Docs
+docs/
+
+# Training outputs
+outputs/
+samples/
+
+# Backup folders (already have everything we need)
+**/v3_backup/
+scripts/v3_backup/
+src/models/v3_backup/

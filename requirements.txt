@@ -1,68 +1,59 @@
-# IMPORTANT: This project uses different requirements files:
-# - requirements_docker.txt: For Docker training environment  
-# - requirements_data.txt: For local data download environment
-# Please use the appropriate file based on your needs
+# CLAP2Diffusion V4 Hybrid Requirements
+# Updated for current environment compatibility
 
-# Core ML libraries (PyTorch is installed separately in Dockerfile)
-# torch==2.1.0
-# torchvision==0.16.0
-# torchaudio==2.1.0
+# PyTorch - Install with CUDA 11.8 support
+# pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu118
 
-# Diffusion models
-diffusers==0.24.0
-transformers==4.36.0
-accelerate==0.25.0
+# Core Dependencies (verified compatible versions)
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+diffusers==0.34.0
+transformers==4.55.0
+accelerate==1.10.0
 safetensors==0.4.1
 
-# LoRA and parameter-efficient fine-tuning
-peft==0.7.0
+# LoRA fine-tuning
+peft==0.17.0
 
 # Audio processing
 librosa==0.10.1
 soundfile==0.12.1
-audioread==3.0.1
 
-# Image processing
+# Image processing  
 Pillow==10.1.0
-opencv-python==4.8.1.78
 
 # Data handling
-numpy==1.24.4
-pandas==2.1.4
+numpy==1.26.4  # Compatible with diffusers and scikit-learn
 scipy==1.11.4
 
 # Training utilities
-tensorboard==2.15.1
-wandb==0.16.1
 tqdm==4.66.1
 
-# Configuration
-omegaconf==2.3.0
-pyyaml==6.0.1
+# Essential for architecture
+einops==0.7.0
 
-# Web interface
+# Memory efficient attention (CUDA 11.8)
+# pip install xformers==0.0.31.post1 --index-url https://download.pytorch.org/whl/cu118
+xformers==0.0.31.post1
+
+# Inference demo
 gradio==4.8.0
 
-# Evaluation metrics
-torchmetrics==1.2.1
-scikit-learn==1.3.2
+# Hugging Face hub
+huggingface-hub==0.19.4
 
-# Utilities
-einops==0.7.0
-matplotlib==3.8.2
-seaborn==0.13.0
-
-# Development tools
-ipykernel==6.27.1
-jupyter==1.0.0
-black==23.12.0
-isort==5.13.2
-
-# Additional dependencies for CLAP
-# laion-clap will be installed separately due to dependency conflicts
+# Additional for CLAP support
 ftfy==6.1.3
 regex==2023.12.25
-webdataset==0.2.48
 
-# xFormers for memory-efficient attention (optional)
-xformers==0.0.23
+# Training monitoring
+wandb==0.16.1
+
+# NLP for caption parsing
+nltk==3.8.1
+
+# Optional: Additional utilities
+matplotlib==3.7.2
+tensorboard==2.14.0
+scikit-learn==1.3.2
