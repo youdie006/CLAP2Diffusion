@@ -2,14 +2,22 @@
 
 Audio to Image generation using CLAP + Stable Diffusion
 
-## V3 Architecture
-- 4x self-attention audio projector
-- 77 audio tokens
-- SonicDiffusion-style adapters
-- 3-stage training
+## V4 Hybrid Architecture (Current)
+- Hierarchical audio decomposition (foreground/background/ambience)
+- Optimized weighted fusion approach
+- Memory-efficient training with LoRA
+- ~20 seconds per training step
 
-## Datasets
-- AudioCaps: 5,002 pairs
+## Key Features
+- Text-audio creative composition
+- 5,002 AudioCaps training pairs
+- Minimal trainable parameters (~5M)
+- Compatible with Stable Diffusion v1.5
+
+## Training Progress
+- Stage 1: Audio-text alignment (3,000 steps)
+- Stage 2: Hierarchical optimization (2,000 steps)
+- Currently training V4 model
 
 ## Docs
 - [Architecture](docs/ARCHITECTURE.md)
@@ -17,4 +25,4 @@ Audio to Image generation using CLAP + Stable Diffusion
 - [Troubleshooting](docs/TROUBLESHOOTING.md)
 
 ## Status
-Work in progress
+V4 Hybrid model in active training
