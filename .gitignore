@@ -36,7 +36,12 @@ ENV/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints/
+*.ipynb_# Large checkpoint files
+checkpoints/*.pth
+checkpoints/*.pt
+checkpoints/*.ckpt
+checkpoints/*.safetensors
+checkpoints/*.bin
 
 # IDE
 .vscode/
@@ -127,3 +132,10 @@ samples/
 **/v3_backup/
 scripts/v3_backup/
 src/models/v3_backup/
+
+# Large checkpoint files
+checkpoints/*.pth
+checkpoints/*.pt
+checkpoints/*.ckpt
+checkpoints/*.safetensors
+checkpoints/*.bin
