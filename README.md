@@ -1,7 +1,7 @@
 # CLAP2Diffusion: Hierarchical Audio-to-Image Generation
 
 **KUBIG Contest**  
-
+📄 Project Presentation (PDF)
 <div align="center">
   
 | 🎵 Thunder.wav + "a beach" | 🎵 Thunder.wav + "a city" |
